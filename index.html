@@ -1,15 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/77538e526e.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="cards">
+            <div class="profil">
+                <div class="profil__content">
+                    <div class="profil__content-person">
+                        <img
+                            src="./img/image-jeremy.png"
+                            alt="profil-photo"
+                            class="profil__content-img"
+                        />
+                        <div class="profil__text">
+                            <p class="profil__content-text">Report for</p>
+                            <p class="profil__content-name">Jeremy Robson</p>
+                        </div>
+                    </div>
+                    <div class="profil__content-links">
+                        <a href="#" class="link daily active" data-filter="daily">Daily</a>
+                        <a href="#" class="link weekly" data-filter="weekly">Weekly</a>
+                        <a href="#" class="link monthly" data-filter="monthly">Monthly</a>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <div class="content__img work__content-img">
+                    <img
+                        src="./img/icon-work.svg"
+                        alt="briefcase"
+                        class="work__img"
+                    />
+                </div>
+                <div class="content__data">
+                    <div class="data__header">
+                        <span class="title">---</span>
+                        <a href="#" class="header__link"
+                            ><i class="fa-solid fa-ellipsis link__dots"></i
+                        ></a>
+                    </div>
+                    <div class="content__data-text">
+                        <p class="data__hour weekly__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__hour daily__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__hour monthly__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__text weekly__text">
+                            Last Week - <span class="previous">--</span>hrs
+                        </p>
+                        <p class="data__text daily__text">
+                            Last Day - <span class="previous">--</span>hrs
+                        </p>
+                        <p class="data__text monthly__text">
+                            Last Month - <span class="previous">--</span>hrs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="play">
+                <div class="content__img play__content-img">
+                    <img
+                        src="./img/icon-play.svg"
+                        alt="joystick"
+                        class="play__img"
+                    />
+                </div>
+                <div class="content__data">
+                    <div class="data__header">
+                        <span class="title">---</span>
+                        <a href="#" class="header__link"
+                            ><i class="fa-solid fa-ellipsis link__dots"></i
+                        ></a>
+                    </div>
+                    <div class="content__data-text">
+                        <p class="data__hour weekly__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__hour daily__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__hour monthly__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__text weekly__text">
+                            Last Week - <span class="previous">--</span>hrs
+                        </p>
+                        <p class="data__text daily__text">
+                            Last Day - <span class="previous">--</span>hrs
+                        </p>
+                        <p class="data__text monthly__text">
+                            Last Month - <span class="previous">--</span>hrs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="study">
+                <div class="content__img study__content-img">
+                    <img
+                        src="./img/icon-study.svg"
+                        alt="book"
+                        class="study__img"
+                    />
+                </div>
+                <div class="content__data">
+                    <div class="data__header">
+                        <span class="title">---</span>
+                        <a href="#" class="header__link"
+                            ><i class="fa-solid fa-ellipsis link__dots"></i
+                        ></a>
+                    </div>
+                    <div class="content__data-text">
+                        <p class="data__hour weekly__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__hour daily__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__hour monthly__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__text weekly__text">
+                            Last Week - <span class="previous">--</span>hrs
+                        </p>
+                        <p class="data__text daily__text">
+                            Last Day - <span class="previous">--</span>hrs
+                        </p>
+                        <p class="data__text monthly__text">
+                            Last Month - <span class="previous">--</span>hrs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="exercise">
+                <div class="content__img exercise__content-img">
+                    <img
+                        src="./img/icon-exercise.svg"
+                        alt="a-runner"
+                        class="exercise__img"
+                    />
+                </div>
+                <div class="content__data">
+                    <div class="data__header">
+                        <span class="title">---</span>
+                        <a href="#" class="header__link"
+                            ><i class="fa-solid fa-ellipsis link__dots"></i
+                        ></a>
+                    </div>
+                    <div class="content__data-text">
+                        <p class="data__hour weekly__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__hour daily__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__hour monthly__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__text weekly__text">
+                            Last Week - <span class="previous">--</span>hrs
+                        </p>
+                        <p class="data__text daily__text">
+                            Last Day - <span class="previous">--</span>hrs
+                        </p>
+                        <p class="data__text monthly__text">
+                            Last Month - <span class="previous">--</span>hrs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="content__img social__content-img">
+                    <img
+                        src="./img/icon-social.svg"
+                        alt="message-bubble"
+                        class="social__img"
+                    />
+                </div>
+                <div class="content__data">
+                    <div class="data__header">
+                        <span class="title">---</span>
+                        <a href="#" class="header__link"
+                            ><i class="fa-solid fa-ellipsis link__dots"></i
+                        ></a>
+                    </div>
+                    <div class="content__data-text">
+                        <p class="data__hour weekly__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__hour daily__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__hour monthly__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__text weekly__text">
+                            Last Week - <span class="previous">--</span>hrs
+                        </p>
+                        <p class="data__text daily__text">
+                            Last Day - <span class="previous">--</span>hrs
+                        </p>
+                        <p class="data__text monthly__text">
+                            Last Month - <span class="previous">--</span>hrs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="self-care">
+                <div class="content__img self-care__content-img">
+                    <img
+                        src="./img/icon-self-care.svg"
+                        alt="heart"
+                        class="self-care__img"
+                    />
+                </div>
+                <div class="content__data">
+                    <div class="data__header">
+                        <span class="title">---</span>
+                        <a href="#" class="header__link"
+                            ><i class="fa-solid fa-ellipsis link__dots"></i
+                        ></a>
+                    </div>
+                    <div class="content__data-text">
+                        <p class="data__hour weekly__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__hour daily__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__hour monthly__hour">
+                            <span class="current">--</span>hrs
+                        </p>
+                        <p class="data__text weekly__text">
+                            Last Week - <span class="previous">--</span>hrs
+                        </p>
+                        <p class="data__text daily__text">
+                            Last Day - <span class="previous">--</span>hrs
+                        </p>
+                        <p class="data__text monthly__text">
+                            Last Month - <span class="previous">--</span>hrs
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <script src="./js/main.js"></script>
-</body>
+        <script src="./js/main.js"></script>
+    </body>
 </html>

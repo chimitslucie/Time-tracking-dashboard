@@ -1,27 +1,364 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 
 :root {
-  
+    --blue: #5747ea;
+    --light-orange: #ff8b64;
+    --soft-blue: #55c2e6;
+    --light-red: #ff5e7d;
+    --lime-green: #4bcf82;
+    --violet: #7335d2;
+    --soft-yellow: #f1c75b;
+    --very-dark-blue: #0e0f23;
+    --dark-blue: #1c204b;
+    --desaturated-blue: #7078c9;
+    --pale-blue: #bbc0ff;
+    --white: #ffffff;
+    --soft-violet: #33397a;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  img {
+}
+
+img {
     width: 100%;
     max-width: 100%;
-  }
-  
-  html,
-  body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-  }
+}
 
-  body {
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+body {
     width: 100vw;
     height: 100vh;
-  }
+    background-color: var(--very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    max-width: 1110px;
+}
+
+.profil {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.profil__content {
+    border-radius: 15px;
+    background-color: var(--dark-blue);
+}
+
+.profil__content-person {
+    background-color: var(--blue);
+    padding: 35px 80px 80px 30px;
+    border-radius: 15px;
+}
+
+.profil__content-img {
+    width: 78px;
+    border: 3px solid var(--white);
+    border-radius: 100%;
+}
+
+.profil__content-text {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--pale-blue);
+    margin: 40px auto 5px auto;
+}
+
+.profil__content-name {
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--white);
+}
+
+.profil__content-links {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px 30px 30px;
+}
+
+.link {
+    font-size: 18px;
+    color: var(--desaturated-blue);
+}
+
+.link.active {
+    color: var(--white);
+}
+
+.link:hover {
+    color: var(--white);
+}
+
+.link + .link {
+    margin-top: 20px;
+}
+
+.work {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.content__img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    text-align: end;
+    overflow: hidden;
+}
+
+.work__content-img {
+    background-color: var(--light-orange);
+}
+
+.work__img {
+    width: 78px;
+    margin-right: 15px;
+    margin-top: -10px;
+}
+
+.content__data {
+    border-radius: 15px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 30px 35px 30px 30px;
+    cursor: pointer;
+    margin-top: -25px;
+    position: relative;
+    z-index: 1;
+}
+
+.content__data:hover {
+    background-color: var(--soft-violet);
+}
+
+.data__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.header__link {
+    width: 16px;
+    color: var(--pale-blue);
+}
+
+.header__link:hover {
+    color: #d8d8d8;
+}
+
+.data__hour {
+    font-size: 56px;
+    font-weight: 300;
+    color: var(--white);
+    display: none;
+}
+
+.data__hour.active {
+    display: block;
+}
+
+.data__text {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--pale-blue);
+    display: none;
+}
+
+.data__text.active {
+    display: block;
+}
+
+.play {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.play__content-img {
+    background-color: var(--soft-blue);
+}
+
+.play__img {
+    width: 80px;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+.play .content__data {
+    margin-top: -30px;
+}
+
+.study {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.study__content-img {
+    background-color: var(--light-red);
+}
+
+.study__img {
+    width: 78px;
+    margin-right: 15px;
+    margin-top: -10px;
+}
+
+.study .content__data {
+    margin-top: -30px;
+}
+
+.exercise {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.exercise__content-img {
+    background-color: var(--lime-green);
+}
+
+.exercise__img {
+    width: 80px;
+    margin-right: 15px;
+    margin-top: 0;
+}
+
+.exercise .content__data {
+    margin-top: -15px;
+}
+
+.social {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.social__content-img {
+    background-color: var(--violet);
+}
+
+.social__img {
+    width: 75px;
+    margin-right: 15px;
+    margin-top: -15px;
+}
+
+.social .content__data {
+    margin-top: -45px;
+}
+
+.self-care {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.self-care__content-img {
+    background-color: var(--soft-yellow);
+}
+
+.self-care__img {
+    width: 70px;
+    margin-right: 10px;
+    margin-top: -15px;
+}
+
+.self-care .content__data {
+    margin-top: -15px;
+}
+
+@media (max-width: 375px) {
+    body {
+        display: block;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 25px;
+        max-width: 325px;
+        margin: 80px auto;
+    }
+
+    .profil {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .profil__content-person {
+        display: flex;
+        align-items: center;
+        padding: 35px 40px 30px 30px;
+    }
+
+    .profil__content-img {
+        width: 64px;
+    }
+
+    .profil__content-text {
+        margin: 0 0 5px 0;
+    }
+
+    .profil__content-name {
+        font-size: 24px;
+    }
+
+    .profil__content-links {
+        flex-direction: row;
+        align-content: center;
+        padding: 25px 30px 25px 35px;
+        justify-content: space-around;
+    }
+
+    .link + .link {
+        margin-top: 0;
+    }
+
+    .work {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .content__data-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .data__hour {
+        font-size: 32px;
+    }
+
+    .data__text {
+        margin-top: 0;
+    }
+
+    .play {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .study {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .exercise {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+    .social {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .self-care {
+        grid-area: 7 / 1 / 8 / 2;
+    }
+}
